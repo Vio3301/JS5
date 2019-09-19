@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="contact-form">
+       <h2>Add your contact phone numbers</h2>
+       <input type="text" placeholder="phone 1"><br>
+    </div>
+    <div><button onclick="addPhoneInput()">+</button></div>
+
+
+
+
+    <script>
+        var n = 1
+    function addPhoneInput(){
+        n++;
+        // 1) search element
+        var form = document.getElementById('contact-form')
+        //2) created/add element DO NOT USE!
+        // form.innerHTML += '<input type="text" placeholder="phone 1"><br>'
+        
+        //2.b) create
+
+        var input = document.createElement('input')
+        form.appendChild(input)
+        input.type =  "text"
+        input.placeholder = `phone ${n}`
+        var br = document.createElement('br')
+        form.appendChild(br)
+        console.log(form)
+
+    }
+//     - tema pentru acasa 
+//    * maxim 5 numere de telefon
+//     sa nu dam voie sa pue cinpuri pina cind nu pune numar de telefon
+//        sa gasim ultimul input si sa te uiti daca nu e gol (e.value)
+
+    </script>
+</body>
+</html>

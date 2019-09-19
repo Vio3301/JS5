@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+       
+</body>
+</html>
+
+
+
+<!-- 
+1)  HTMLCollection (like Arrays)  .children .childNodes
+    .getElementsByTagName()
+
+    for(var i = 0 i<collection.length i++){
+        collections[i].xxxxxxxxxx()
+    }
+    collections.forEach(function(e){e.xxxxxx()})
+
+------------------------------------------------------------
+
+2)  Attributs:     document.body.children. ... |
+                   ----------------------------|
+    * standart attributes - e.id, e.className, e.classList, e.src , e.style , e.href , e.value , .....
+    * non standart / profisional -  e.hasAttribute("name")
+                                    e.getAttribute("name")
+                                    e.setAttribute('atribut',"name")
+                                    e.removeAttribute("name")
+
+-------------------------------------------------------------
+
+3) Properties:  
+     e.innerHTML     <-> string (HTML)
+     e.innerText     <-> string (Plain innerText)
+       * .innerHTML = <structure> - cale gresita pagina o sa incarce mai greu
+            - SLOW / parse , interpret , coreect, render..
+            - Reset Element State
+     
+    e.tegName
+    e.xxxxxxxxx -> states , values , structure
+      
+
+----------------------------------------------------------------
+
+4) Change Elements:
+    
+   element.innerHTML = "<structure>"   !=
+    a) var c = document.createElement('child')
+    b) parentElement.appenChild( c )
+
+    perentElement.removeChild( c )  stergem din structura HTML
+
+-----------------------------------------------------------------
+
+ * object , property , method(),    element, node , attribute
+ * page.html -> tag , attributes , text , coment , special caracter  ---
+               -> DOM ()
+
+
+- interate through collections {for}
+   (atributes)
+        - get (read) atributes
+        - has (test) attributes
+        - set (write) atributes
+        - unset(remove) attributes
+ 
+
+
+- elements / nodes
+       - creates element
+       - add/append to DOM element
+       - remove/destroy from DOM element
+       - swap, move from DOM 
+
+ -->
